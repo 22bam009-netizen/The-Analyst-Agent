@@ -8,6 +8,8 @@ First of all we need to install the library named "feedparser".
 
 Install feedparser using the "pip install" command.
 
+Import the essential libraries.
+
 After the code is opened and the libraries are installed press the Run Cell(ctrl+Enter).
 
 If the source code is opened in Google colab change the Runtime type to T4 GPU from CPU for getting faster output.
