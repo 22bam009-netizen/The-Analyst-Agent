@@ -42,9 +42,8 @@ print("Fetched:", len(articles))
 
 
 def compute_information_density(article):
-    # Truncate text to fit model's max input length (e.g., 400 characters for a 512 token limit)
     text = (article.get("content") or article.get("description") or "").lower()
-    text = text[:400] # Truncate to avoid model input length issues
+    text = text[:400] 
 
     tech_keywords = [
         "model", "dataset", "training", "api", "benchmark",
@@ -105,9 +104,8 @@ print("After info-density filter:", len(articles))
 
 
 def extract_fields(article):
-    # Truncate text to fit model's max input length (e.g., 400 characters for a 512 token limit)
     text = article["title"] + "\n" + article["content"]
-    text = text[:400] # Truncate to avoid model input length issues
+    text = text[:400] 
 
     prompt = f"""
 Extract the following fields from the news article:
